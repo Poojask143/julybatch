@@ -11,4 +11,9 @@ let myFrist_Name='pooja';
 var mySName='surwase';
 
 var myName;
-myName='om'
+myName='om';
+myNmae='prem';
+
+const cityName='pune';
+cityName='parli';
+console.log('cityName,cityName');
