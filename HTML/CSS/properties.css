@@ -1,0 +1,54 @@
+p{
+    color: yellowgreen;
+    text-shadow: 9px 9px 9px 13px yellowgreen;
+    font-size: 100px;
+}
+.div-shadow{
+    border: 1px solid black;
+    height:100px ;
+    width: 100px;
+    box-shadow: 7px 7px 15px red;
+
+}
+.txt-transfer{
+    text-transform: lowercase;
+}
+
+h1{
+    text-align: center;
+    border: 1px solid black;
+}
+.div-overflow-prop{
+    width: 300px;
+    bottom: 1px solid black;
+    height: 300px;
+    overflow:auto;
+    /*overflow:scroll;*/
+    /*overflow-x: unset;
+    overflow-y:scroll;*/
+}
+.txt-overflow{
+    width: 150px;
+    border:1px solid black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;  /*clip/elipsis*/
+}
+
+.txt-overflow:hover{
+    overflow:visible
+}
+.word-brk{
+    width: 100px;
+    border:1px solid black;
+}
+.word-wrap{
+    width: 100px;
+    border:1px solid black;
+}
+img{
+    opacity: 1.5;
+}
+img:hover{
+    opacity: 1;
+}

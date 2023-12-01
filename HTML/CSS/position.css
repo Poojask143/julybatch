@@ -1,0 +1,48 @@
+.position-static{
+    border: 1px solid black;
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+    position: static; /*default:u can write it here or not its always their as */
+    top:50px;/*it should be disablr in case of static position value*/
+}
+.pos-relative{
+    border: 1px solid black;
+    height:200px;
+    width:200px;
+    background-color: red;
+    position: relative;
+    top:10px;
+    left:100px;
+
+}
+.pos-abs{
+    border: 1px solid black;
+    height:200px;
+    width:200px;
+    background-color:rgb(55,255,0);
+    position: absolute;
+    top:440px;
+    left:200px;
+   
+}
+.pos-fixed{
+    border: 1px solid black;
+    height:30px;
+    width: 1400px;px;
+    background-color:rgb(5,155,0);
+    position: fixed;
+    bottom:0px;
+}
+.pos-sticky{
+    border: 1px solid black;
+    height:30px;
+    width:1400px;
+    background-color:rgb(82,24,37);
+    position: sticky;
+    top:0px;
+}
+.main-container{
+    height: 1700px;
+
+}
