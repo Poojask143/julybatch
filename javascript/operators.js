@@ -29,4 +29,18 @@ console.log("<", e < f); //true
 
 console.log("<=", e <= f);//less than equal to operator
 
+//&& AND :T && T,else F
+
+console.log(e < f && f == e);
+
+// || OR || F ,else T 
+
+console.log( e < f || f == e); 
+console.log( e < f || f== e && a !=b);
+
+console.log(a !== b); // value and DT
+
+
+
+
 

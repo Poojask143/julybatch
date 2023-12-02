@@ -1,0 +1,25 @@
+<!--<script src="conditions.js"></script>-->
+<p id="stock"></p>
+<script>
+    let items=40;
+
+    if(items >=50);{
+    //console.log("stock ia available");
+    document.getElementById("stock").innerHTML="stock is available"
+} 
+
+else if(items >=20){
+    //console.log("few items left");
+    document.getElementById("stock").innerHTML="few items left"
+
+}
+else if(items >=1){
+    //console.log("Hurry up few stock available");
+    document.getElementById("stock").innerHTML="Hurry up few stock is available"
+}
+else{
+    //console.log("out of stock");
+    document.getElementById("stock").innerHTML="out of stock";
+}
+
+</script>

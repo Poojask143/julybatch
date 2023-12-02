@@ -26,6 +26,6 @@ console.log("a",a);
 console.log("a", + a);
 console.log(a,b,c,d,city);
 console.log('a',a,'b',b,'c',c,'d',d,'city',city);
-
+ 
 
 
