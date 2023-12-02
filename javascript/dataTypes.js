@@ -14,3 +14,8 @@
 //an array
 //a date
 console.log('khjjhh');console.log('pooja');
+
+console.log(city);
+city='pune';
+console.log(city);
+
