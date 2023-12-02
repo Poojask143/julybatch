@@ -12,8 +12,8 @@ var mySName='surwase';
 
 var myName;
 myName='om';
-myNmae='prem';
+myNmae='prem ,mhkhj jhkjj iuikjo iuouo ';
 
-const cityName='pune';
+const cityName='pune';    //const keyword initialization of value is must 
 cityName='parli';
 console.log('cityName,cityName');
