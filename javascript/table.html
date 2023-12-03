@@ -2,15 +2,15 @@
 <button onclick="myFunction()">Add number</button>
 
 <p id="table"></p>
+<!--<script src="table.js">-->
 <script>
-    src="table.html"
     function addNumber(){
-        let number = prompt("Enter the number");
+       let number = parseInt(prompt("Enter the number"));
         for(let i = 1;i <=10; i++) {
-            let res = number * 1;
+           let res = number * 1;
 
             //document.getElementById("table").innerHTML=res +'<br>'
-
-        }
+            document.write(res+ '<br>')
+       }
     }
 </script>

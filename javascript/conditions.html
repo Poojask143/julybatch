@@ -4,22 +4,40 @@
     let items=40;
 
     if(items >=50);{
-    //console.log("stock ia available");
-    document.getElementById("stock").innerHTML="stock is available"
+    document.write("stock is available");
 } 
 
-else if(items >=20){
-    //console.log("few items left");
-    document.getElementById("stock").innerHTML="few items left"
+ if(items >=20 && items <=50){
+     document.write("few items left");
 
 }
-else if(items >=1){
-    //console.log("Hurry up few stock available");
-    document.getElementById("stock").innerHTML="Hurry up few stock is available"
+else if(items >=1 && items <=20){
+    document.write("Hurry up few stock is available");
 }
 else{
-    //console.log("out of stock");
-    document.getElementById("stock").innerHTML="out of stock";
+    document.write("out of stock");
 }
+    document.write('<br>','<br>');
 
+let marks="sachin T";
+switch(marks){
+    case "sachin T":
+        documemt.write('cricket player');
+        break;
+
+    case 60:
+        documemt.write(' second pass');
+        break;
+
+        case 70:
+            documemt.write('first class');
+        break;
+        case 85:
+            document.write('distinction');
+        break;
+
+        default:
+             documemt.write('fail');
+       
+}
 </script>
