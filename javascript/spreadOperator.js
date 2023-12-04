@@ -47,7 +47,7 @@ let num2 =[...num];
         name:"poonam",
         age:"28",
         city:"pune"
-        salary:30000
+        salary: 30000
     };
     let emp4 = {...emp1, ...emp2};//use spread operator if keys are different in both the obj ,
     console.log(emp4);//do not use sp for obj
