@@ -47,6 +47,33 @@ console.log(c14);
 
 //delete
 const fruits=['banana','apple','mango','chiku'];
-delete fruits[1];
-console.log(fruits);
-console.log(fruits.length);// length remains same after deleting item
+//delete fruits[1];
+console.log('>>>',fruits);
+
+
+//splice(index(where u want to add item ),count(how many elements want to))
+const fruit1=["banana","apple","mango","chiku"];
+//fruit1.splice(1,0'liwi');
+fruit1.splice(1,2,'kiwi');
+console.log(fruit1);
+
+const fruit2=["banana","apple","mango","chiku","kiwi"];
+let a = fruit2.splice(2,3);
+console.log(a);
+console.log(fruit2);
+
+
+//number methods
+let no = 787787;
+let no1 = no.toString();
+console.log(no1);
+
+//toFixed()
+let weigth  = 4.567496;
+let w2 = weigth.toFixed(3);
+console.log(w2);
+
+//valueOf()
+let r = 5656;
+console.log(r.valueOf());
+
