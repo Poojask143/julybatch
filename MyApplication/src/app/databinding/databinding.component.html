@@ -1,0 +1,29 @@
+<p>{{data}}</p>
+<div>{{amount}}</div>
+
+<!--we can pass fun to the interpolation-->
+<div>{{test()}}</div>
+
+<!--assignment is not possible with interpolation-->
+<!--<div>{{schoolName ="holy cross school"}}</div>-->
+
+<!--we can use equality opertaor with interpolation-->
+
+<!-- <div>{{amount == 1900000}}</div>   overlaping of num and string at error-->
+<div>{{amount == 9000000}}</div>
+<div>{{amount*7}}</div>
+
+<p>{{isMatch}}</p>
+<!-- <p>   links   </p>-->
+<!-- <p>{{x--}}>/p> increament /decrement not allowed-->
+
+<input type="text" [value]="name">Enter name
+
+<button (click)="clickEvent()">click Event</button><br>
+{{clickEventData}}<br>
+
+<input type="text" [(ngModel)] = 'city'> Enter city <br>
+
+Entered city = {{city}}
+
+
