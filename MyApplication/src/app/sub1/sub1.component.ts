@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-sub1',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./sub1.component.css']
 })
 export class Sub1Component {
+  data1:any;
+  constructor(private dataservice: DataService){}
 
+  ngOnInit(){
+    this.dataservice.data.subscribe(data=>{
+      this.data1 = data;
+    })
+    console.log("this.data1",this.data1);
+  }
 }
