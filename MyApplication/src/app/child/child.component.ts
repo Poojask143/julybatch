@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,EventEmitter,Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,11 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ChildComponent {
   @Input() cityName:any;
-  @Output() data = new EventEmitter<any>
-  state="maharastra";
+  @Output()data= new EventEmitter<any>;
+  state = "maharastra";
 
+  dataFromChild(){
+    this.data.emit(this.state);
+  }
 }
-dataFormChild()
-{
+
   
-}
+

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LifecyclehookComponent } from './lifecyclehook.component';
+import { LifecyclehookComponent } from './lifecyclehooks.component';
 
 describe('LifecyclehookComponent', () => {
   let component: LifecyclehookComponent;

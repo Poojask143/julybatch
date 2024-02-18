@@ -1,5 +1,6 @@
 import { BindingPipe } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -28,7 +29,7 @@ export class DatabindingComponent {
  city:any = "pune";
 
 
-
+constructor (private dataservice: DataService, private router: Router ){}
  //<!--  = :assignment operator: to assign value to variable or property
 
    //   == : equality operator: it compares value only
@@ -42,8 +43,8 @@ export class DatabindingComponent {
     this.clickEventData =898988;
   }
   assignVal(){
-    this.dataService.userName="priya";
-    this.router.navigateByUr('lifecycleHooks');
+    this.dataservice.userName="priya";
+    this.router.navigateByUrl('lifecycleHooks');
   }
 
 

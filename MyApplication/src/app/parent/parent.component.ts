@@ -6,6 +6,13 @@ import { Component,Input} from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
-  @Input() cityName :any;
+city = "Mumbai";
+state:any;
+sName!:string;
+
+dataFromChild(event:any){
+  console.log(event);
+  this.state = event;
+}
 
 }

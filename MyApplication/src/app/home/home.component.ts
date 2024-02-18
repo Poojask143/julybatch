@@ -21,8 +21,8 @@ export class HomeComponent { //component class:number of properties,constructor,
                                                                     //denpendency injection  he constructor madhech iject kele jatat
 
   ngOnInit(){
-    this.dataService.uersName= this.name;
-    console.log("ngOnInit calling");
+    this.dataService.userName= this.name;
+    console.log("set",this.dataService.userName);
   }
  
 

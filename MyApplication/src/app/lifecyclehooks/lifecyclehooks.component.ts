@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-lifecyclehook',
-  templateUrl: './lifecyclehook.component.html',
-  styleUrls: ['./lifecyclehook.component.css']
+  templateUrl: './lifecyclehooks.component.html',
+  styleUrls: ['./lifecyclehooks.component.css']
 })
 export class LifecyclehookComponent {
   name:any; //normal property
- // @Input() surName:any;  //input property
+  @Input() surName:any;  //input property
  
 constructor(private dataService:DataService){
   console.log("constructor calling..");
@@ -28,6 +28,8 @@ ngOnChange(){
   console.log("onchages calling");
 }
 ngOnInit(){
+
+  this.name = this.dataService.userName;
   console.log("oninit calling");
 }
 ngOnDoCheck(){

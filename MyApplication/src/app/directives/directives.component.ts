@@ -13,7 +13,7 @@ export class DirectivesComponent{
 city="pune"
 isShow =true; //null//undefined/faLse >>false
 
-cars=['i10','i20','swift','jagur']
+cars=['i10','i20',"swift","jagur"]
 showDiv= true;
 fruit="pappaya";
   
@@ -35,8 +35,9 @@ constructor(private dataService : DataService){}
   
   //Attribute Directives:Attribute directives are used to change the look and behaviour of the DOM elements example:ngClass directive,ngStyledirective
  
-  //1 .ngClass Directive:the ngClass directive is used to add orremove CSS classes to an HTML element.
-  //2 .ngStyle Directive: the ngStyle directive facilities you to modify the style of an HTML element using the expression.
+  //1 .ngClass Directive:  The ngClass directive is used to add orremove CSS classes to an HTML element.
+  //2 .ngStyle Directive:  The ngStyle directive facilities you to modify the style of an HTML element using the expression.
+
   // you can also use ngStyle directive to dynamically change the style of your html element
 
 
@@ -45,8 +46,8 @@ toggle(){
   this.showDiv= !this.showDiv; //! T >> F / IF>>T
 }
 
-getData(){
- this.user =this.dataService.uersName;
+public getData(){
+ this.user =this.dataService.userName;
  console.log("username",this.user);
 }
 }
