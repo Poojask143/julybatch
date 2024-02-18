@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-sub',
@@ -12,3 +13,4 @@ export class SubComponent {
 //subject is special type of observable that alllows to be  multicasted to many oberservers . the subjects are also observers
 // because they can subscribe observable and get value from it, which it will multicast to all od its subscribers.
 }
+
