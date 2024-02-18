@@ -1,6 +1,7 @@
 import { BindingPipe } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -29,7 +30,7 @@ export class DatabindingComponent {
  city:any = "pune";
 
 
-constructor (private dataservice: DataService, private router: Router ){}
+constructor (private dataservice: DataService, private router:Router ){}
  //<!--  = :assignment operator: to assign value to variable or property
 
    //   == : equality operator: it compares value only
