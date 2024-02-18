@@ -12,10 +12,13 @@ export class Sub1Component {
 
   ngOnInit(){
     this.dataservice.data.subscribe(data=>{
-      this.data1 = data;
+      //this.data1 = data;
     })
     console.log("this.data1",this.data1);
-    this.data1;
+    //this.data1;
+  }
+  getData(){
+    console.log("this.data1",this.data1);
   }
 }
   
