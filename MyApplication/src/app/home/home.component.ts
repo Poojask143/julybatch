@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({     //component directive:metadata of component
   selector: 'app-home',
@@ -14,9 +15,15 @@ export class HomeComponent { //component class:number of properties,constructor,
      surName:any=true;
      name:string="pooja";
      name2!:string                             // ! -not operator
-     name3:any;
+     name3:any;     
 
-  constructor(private router:Router){}//construction section
+  constructor(private router:Router , private dataService :DataService){}//construction section  
+                                                                    //denpendency injection  he constructor madhech iject kele jatat
+
+  ngOnInit(){
+    this.dataService.uersName= this.name;
+    console.log("ngOnInit calling");
+  }
  
 
   //lifeccycle hook,methods
@@ -30,6 +37,9 @@ export class HomeComponent { //component class:number of properties,constructor,
   }
   test(){
     console.log("test calling...");
+}
+directives(){
+  this.router.navigateByUrl('directives')
 }
 
 }

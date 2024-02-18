@@ -41,5 +41,10 @@ export class DatabindingComponent {
   clickEvent(){
     this.clickEventData =898988;
   }
+  assignVal(){
+    this.dataService.userName="priya";
+    this.router.navigateByUr('lifecycleHooks');
+  }
+
 
 }

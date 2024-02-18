@@ -1,0 +1,56 @@
+<p>directives works!</p>
+
+<div *ngIf="isShow">
+    <p>{{city}}</p>
+</div>
+
+<div>{{cars}}</div>
+<div *ngFor="  let carName of cars">
+    {{carName}}
+</div>
+<br>
+<div class="div-container" *ngIf="showDiv">
+
+</div>
+<br>
+<button (click) ="toggle()">toggle</button>
+
+<div [ngSwitch] ="fruit">
+    <div *ngSwitchCase="'mango'">
+        my fav fruit is mango
+    </div>
+
+       <div *ngSwitchCase="'pinapple'">
+        my fav fruit is pinaaple
+    </div>
+
+    <div *ngSwitchCase="'pappaya'">
+        my fav fruit is pappaya
+    </div>
+</div>
+<br>
+
+<div [ngClass]="{'adminCls': user == 'Admin',
+                'mentorCls' :user == 'Menter',
+                'studentCls': user == 'Student'}">
+    welcome to app
+</div>
+<br>
+
+<div [class.adminCls] = "user == 'Admin'"
+    [class.menterCls] = " user == 'Menter'"
+    [class.studentCls] = " user == 'Student'">
+    welcome
+</div>
+
+<div style ="color :blueviolet;">
+    welcome
+</div>
+
+<div [ngStyle] = "user == 'Admin' ? {'backgorund-color':'yellow'}
+:{'background-color':'black'}">
+welcome
+</div>
+
+<button (click) ="getData()">get data</button>
+{{user}}

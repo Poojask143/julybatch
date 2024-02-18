@@ -8,6 +8,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
+import { LifecyclehookComponent } from './lifecycleHooks/lifecyclehook.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [        //component/pipe/directive
@@ -15,7 +19,11 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     SignUpComponent,
     LoginComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    LifecyclehookComponent,
+    DirectivesComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [       //modules
     BrowserModule,
