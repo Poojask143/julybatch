@@ -7,6 +7,9 @@ import { DataService } from '../data.service';
   styleUrls: ['./lifecyclehooks.component.css']
 })
 export class LifecyclehookComponent {
+getData() {
+throw new Error('Method not implemented.');
+}
   name:any; //normal property
   @Input() surName:any;  //input property
  
@@ -52,4 +55,12 @@ ngAfterViewChecked(){
 ngOnDestroy(){
   console.log("ngonDestroy");
 }
+
+getData()
+ {
+  this.dataService.data.subscribe(data=>{
+    
+  console.log(data);
+  })
+ }
 }

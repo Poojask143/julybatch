@@ -15,5 +15,7 @@ export class Sub1Component {
       this.data1 = data;
     })
     console.log("this.data1",this.data1);
+    this.data1;
   }
 }
+  
