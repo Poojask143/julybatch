@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,6 +14,7 @@ import { ChildComponent } from './child/child.component';
 import { SubComponent } from './sub/sub.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
+import { SearchDirective } from './search.directive';
 
 @NgModule({
   declarations: [        //component/pipe/directive
@@ -29,7 +29,8 @@ import { Sub2Component } from './sub2/sub2.component';
     ChildComponent,
     SubComponent,
     Sub1Component,
-    Sub2Component
+    Sub2Component,
+    SearchDirective
   ],
   imports: [       //modules
     BrowserModule,

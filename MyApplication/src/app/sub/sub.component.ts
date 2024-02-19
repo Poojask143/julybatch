@@ -14,6 +14,7 @@ data="pooja";
 constructor(private dataService: DataService){}
 
 ngOnInit(){
+  //this.setData()
   //this.dataService.data.next(this.data);
 }
 setData(){

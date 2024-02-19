@@ -4,10 +4,13 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataService {
+
   userName:any;
 
-  data = new Subject(); 
+  data = new Subject<any>(); 
+
   constructor() { }
 }
 

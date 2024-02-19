@@ -17,8 +17,8 @@ export class Sub1Component {
     console.log("this.data1",this.data1);
     //this.data1;
   }
-  getData(){
-    console.log("this.data1",this.data1);
-  }
+ // getData(){
+   // console.log("this.data1",this.data1);
+  //}
 }
   

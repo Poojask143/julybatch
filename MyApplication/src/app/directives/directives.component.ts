@@ -16,7 +16,14 @@ isShow =true; //null//undefined/faLse >>false
 cars=['i10','i20',"swift","jagur"]
 showDiv= true;
 fruit="pappaya";
-  
+tableHeading =["Name","Contact","MobNo","City","Age"];
+tableData=[
+{Name:"Pooja",Contact:9890535468,City:"ambajogai",Age:29},
+{Name:"Punam",Contact:9890535469,City:"ambad",Age:28},
+{Name:"Priya",Contact:9890535470,City:"pune",Age:27},
+{Name:"Purvi",Contact:9890535471,City:"mumbai",Age:26},
+{Name:"Pranjal",Contact:9890535472,City:"nanded",Age:25},
+{Name:"Pornima",Contact:9890535473,City:"nagpur",Age:24}]
 constructor(private dataService : DataService){}
   //directives are used to manipulate the DOM. By using Angular directives,
   //you can change the appearence,behaviour or a layout of a DOM element

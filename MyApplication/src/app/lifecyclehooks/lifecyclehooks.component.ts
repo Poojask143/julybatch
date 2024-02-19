@@ -56,11 +56,11 @@ ngOnDestroy(){
   console.log("ngonDestroy");
 }
 
-getData()
- {
-this.dataService.data.subscribe(data=>{
+//getData()
+// {
+//this.dataService.data.subscribe(data=>{
     
-  console.log(data);
-  })
- }
+  //console.log(data);
+ // })
+// }
 }
