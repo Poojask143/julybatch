@@ -58,7 +58,7 @@ ngOnDestroy(){
 
 getData()
  {
-  this.dataService.data.subscribe(data=>{
+this.dataService.data.subscribe(data=>{
     
   console.log(data);
   })
